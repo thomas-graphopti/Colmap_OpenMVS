@@ -1,8 +1,7 @@
-FROM ubuntu:20.04 AS updated
+FROM ubuntu:20.04
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update -qq && apt-get upgrade -qq
 
-FROM updated as build
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update -qq
 RUN apt-get install -y  \
@@ -42,6 +41,16 @@ RUN apt-get install -y  \
   libatlas-base-dev \
   libsuitesparse-dev
 
+RUN apt-get install -y  \
+  libfreeimage-dev \
+  libmetis-dev \
+  libgoogle-glog-dev \
+  libgflags-dev \
+  libglew-dev \
+  qtbase5-dev \
+  libcgal-dev
+
+
 WORKDIR /tmp/build
 
 # Install openmvg
@@ -52,7 +61,7 @@ RUN git clone -b develop --recursive https://github.com/openMVG/openMVG.git open
   make install
 
 # Install eigen
-RUN git clone https://gitlab.com/libeigen/eigen.git --branch 3.2 && \
+RUN git clone https://gitlab.com/libeigen/eigen.git --branch 3.3.4 && \
   mkdir eigen_build && cd eigen_build && \
   cmake . ../eigen && \
   make -j4 && \
@@ -69,6 +78,7 @@ RUN git clone https://ceres-solver.googlesource.com/ceres-solver ceres_solver &&
   make -j4 && \
   make install
 
+RUN apt-get update && apt-get install -y libglfw3 libglfw3-dev
 # Install openmvs
 RUN git clone https://github.com/cdcseacave/openMVS.git openmvs && \
   mkdir openmvs_build && cd openmvs_build && \
@@ -83,16 +93,35 @@ RUN git clone https://github.com/pmoulon/CMVS-PMVS /tmp/build/cmvs-pmvs && \
   make -j4 && \
   make install
 
+RUN apt-get update && apt-get install -y \
+  git \
+  cmake \
+  build-essential \
+  libboost-program-options-dev \
+  libboost-filesystem-dev \
+  libboost-graph-dev \
+  libboost-system-dev \
+  libboost-test-dev \
+  libeigen3-dev \
+  libsuitesparse-dev \
+  libfreeimage-dev \
+  libmetis-dev \
+  libgoogle-glog-dev \
+  libgflags-dev \
+  libglew-dev \
+  qtbase5-dev \
+  libqt5opengl5-dev \
+  libcgal-dev
+
 # Install colmap
 # Both master and dev seem broken so commented out for now
-#RUN git clone -b dev https://github.com/colmap/colmap /tmp/build/colmap && \
-#  mkdir -p /tmp/build/colmap_build && cd /tmp/build/colmap_build && \
-#  cmake . ../colmap -DCMAKE_INSTALL_PREFIX=/opt/colmap && \
-#  make -j4 && \
-#  make install
+RUN git clone -b dev https://github.com/colmap/colmap /tmp/build/colmap && \
+  mkdir -p /tmp/build/colmap_build && cd /tmp/build/colmap_build && \
+  cmake . ../colmap -DCMAKE_INSTALL_PREFIX=/opt/colmap && \
+  make -j1 && \
+  make install
 
 # ..and then create a more lightweight image to actually run stuff in.
-FROM updated
 ENV DEBIAN_FRONTEND=noninteractive
 ARG UID=1000
 ARG GID=1000
@@ -123,8 +152,9 @@ RUN apt-get update && apt-get install -y \
   libcxsparse3 \
   python2-minimal
 RUN update-alternatives --install /usr/bin/python python /usr/bin/python2 1
-COPY --from=build /opt /opt
+#COPY --from=build /opt /opt
 COPY pipeline.py /opt/dpg/pipeline.py
+COPY COLMAP_MVS_pipeline.py /opt/dpg/colmap_mvs_pipeline.py
 RUN echo ptools soft core unlimited >> /etc/security/limits.conf
 RUN echo ptools hard core unlimited >> /etc/security/limits.conf
 RUN groupadd -g $GID ptools
