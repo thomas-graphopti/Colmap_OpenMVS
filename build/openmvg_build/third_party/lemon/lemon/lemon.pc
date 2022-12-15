@@ -1,0 +1,10 @@
+prefix=/opt/openmvg
+exec_prefix=/opt/openmvg/bin
+libdir=/opt/openmvg/lib
+includedir=/opt/openmvg/include
+
+Name: LEMON
+Description: Library for Efficient Modeling and Optimization in Networks
+Version: 1.3
+Libs: -L${libdir} -lemon     
+Cflags: -I${includedir}

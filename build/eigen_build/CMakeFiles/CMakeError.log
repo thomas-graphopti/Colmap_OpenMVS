@@ -1,0 +1,291 @@
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_Wshorten64to32 failed with the following output:
+Change Dir: /home/thomas/Colmap_OpenMVS/build/eigen_build/CMakeFiles/CMakeScratch/TryCompile-PjahRN
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_72b4e/fast && /usr/bin/make  -f CMakeFiles/cmTC_72b4e.dir/build.make CMakeFiles/cmTC_72b4e.dir/build
+make[1]: Entering directory '/home/thomas/Colmap_OpenMVS/build/eigen_build/CMakeFiles/CMakeScratch/TryCompile-PjahRN'
+Building CXX object CMakeFiles/cmTC_72b4e.dir/src.cxx.o
+/usr/bin/c++ -DCOMPILER_SUPPORT_Wshorten64to32  -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Werror   -Wshorten-64-to-32 -o CMakeFiles/cmTC_72b4e.dir/src.cxx.o -c /home/thomas/Colmap_OpenMVS/build/eigen_build/CMakeFiles/CMakeScratch/TryCompile-PjahRN/src.cxx
+c++: error: unrecognized command line option '-Wshorten-64-to-32'
+make[1]: *** [CMakeFiles/cmTC_72b4e.dir/build.make:78: CMakeFiles/cmTC_72b4e.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/thomas/Colmap_OpenMVS/build/eigen_build/CMakeFiles/CMakeScratch/TryCompile-PjahRN'
+make: *** [Makefile:127: cmTC_72b4e/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }
+
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_Wenumconversion failed with the following output:
+Change Dir: /home/thomas/Colmap_OpenMVS/build/eigen_build/CMakeFiles/CMakeScratch/TryCompile-gCaufP
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_df25c/fast && /usr/bin/make  -f CMakeFiles/cmTC_df25c.dir/build.make CMakeFiles/cmTC_df25c.dir/build
+make[1]: Entering directory '/home/thomas/Colmap_OpenMVS/build/eigen_build/CMakeFiles/CMakeScratch/TryCompile-gCaufP'
+Building CXX object CMakeFiles/cmTC_df25c.dir/src.cxx.o
+/usr/bin/c++ -DCOMPILER_SUPPORT_Wenumconversion  -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Werror   -Wenum-conversion -o CMakeFiles/cmTC_df25c.dir/src.cxx.o -c /home/thomas/Colmap_OpenMVS/build/eigen_build/CMakeFiles/CMakeScratch/TryCompile-gCaufP/src.cxx
+c++: error: unrecognized command line option '-Wenum-conversion'; did you mean '-Wno-conversion'?
+make[1]: *** [CMakeFiles/cmTC_df25c.dir/build.make:78: CMakeFiles/cmTC_df25c.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/thomas/Colmap_OpenMVS/build/eigen_build/CMakeFiles/CMakeScratch/TryCompile-gCaufP'
+make: *** [Makefile:127: cmTC_df25c/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }
+
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_Wcpp11extensions failed with the following output:
+Change Dir: /home/thomas/Colmap_OpenMVS/build/eigen_build/CMakeFiles/CMakeScratch/TryCompile-SYAyiR
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_ec8d7/fast && /usr/bin/make  -f CMakeFiles/cmTC_ec8d7.dir/build.make CMakeFiles/cmTC_ec8d7.dir/build
+make[1]: Entering directory '/home/thomas/Colmap_OpenMVS/build/eigen_build/CMakeFiles/CMakeScratch/TryCompile-SYAyiR'
+Building CXX object CMakeFiles/cmTC_ec8d7.dir/src.cxx.o
+/usr/bin/c++ -DCOMPILER_SUPPORT_Wcpp11extensions  -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Werror   -Wc++11-extensions -o CMakeFiles/cmTC_ec8d7.dir/src.cxx.o -c /home/thomas/Colmap_OpenMVS/build/eigen_build/CMakeFiles/CMakeScratch/TryCompile-SYAyiR/src.cxx
+c++: error: unrecognized command line option '-Wc++11-extensions'; did you mean '-fms-extensions'?
+make[1]: *** [CMakeFiles/cmTC_ec8d7.dir/build.make:78: CMakeFiles/cmTC_ec8d7.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/thomas/Colmap_OpenMVS/build/eigen_build/CMakeFiles/CMakeScratch/TryCompile-SYAyiR'
+make: *** [Makefile:127: cmTC_ec8d7/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }
+
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_wd981 failed with the following output:
+Change Dir: /home/thomas/Colmap_OpenMVS/build/eigen_build/CMakeFiles/CMakeScratch/TryCompile-gmwfUQ
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_bb5a4/fast && /usr/bin/make  -f CMakeFiles/cmTC_bb5a4.dir/build.make CMakeFiles/cmTC_bb5a4.dir/build
+make[1]: Entering directory '/home/thomas/Colmap_OpenMVS/build/eigen_build/CMakeFiles/CMakeScratch/TryCompile-gmwfUQ'
+Building CXX object CMakeFiles/cmTC_bb5a4.dir/src.cxx.o
+/usr/bin/c++ -DCOMPILER_SUPPORT_wd981  -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wdouble-promotion -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -Werror   -wd981 -o CMakeFiles/cmTC_bb5a4.dir/src.cxx.o -c /home/thomas/Colmap_OpenMVS/build/eigen_build/CMakeFiles/CMakeScratch/TryCompile-gmwfUQ/src.cxx
+c++: error: unrecognized command line option '-wd981'
+make[1]: *** [CMakeFiles/cmTC_bb5a4.dir/build.make:78: CMakeFiles/cmTC_bb5a4.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/thomas/Colmap_OpenMVS/build/eigen_build/CMakeFiles/CMakeScratch/TryCompile-gmwfUQ'
+make: *** [Makefile:127: cmTC_bb5a4/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }
+
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_wd2304 failed with the following output:
+Change Dir: /home/thomas/Colmap_OpenMVS/build/eigen_build/CMakeFiles/CMakeScratch/TryCompile-5pZaLN
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_ba382/fast && /usr/bin/make  -f CMakeFiles/cmTC_ba382.dir/build.make CMakeFiles/cmTC_ba382.dir/build
+make[1]: Entering directory '/home/thomas/Colmap_OpenMVS/build/eigen_build/CMakeFiles/CMakeScratch/TryCompile-5pZaLN'
+Building CXX object CMakeFiles/cmTC_ba382.dir/src.cxx.o
+/usr/bin/c++ -DCOMPILER_SUPPORT_wd2304  -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wdouble-promotion -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -Werror   -wd2304 -o CMakeFiles/cmTC_ba382.dir/src.cxx.o -c /home/thomas/Colmap_OpenMVS/build/eigen_build/CMakeFiles/CMakeScratch/TryCompile-5pZaLN/src.cxx
+c++: error: unrecognized command line option '-wd2304'
+make[1]: *** [CMakeFiles/cmTC_ba382.dir/build.make:78: CMakeFiles/cmTC_ba382.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/thomas/Colmap_OpenMVS/build/eigen_build/CMakeFiles/CMakeScratch/TryCompile-5pZaLN'
+make: *** [Makefile:127: cmTC_ba382/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }
+
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_STRICTANSI failed with the following output:
+Change Dir: /home/thomas/Colmap_OpenMVS/build/eigen_build/CMakeFiles/CMakeScratch/TryCompile-1g6j1R
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_28199/fast && /usr/bin/make  -f CMakeFiles/cmTC_28199.dir/build.make CMakeFiles/cmTC_28199.dir/build
+make[1]: Entering directory '/home/thomas/Colmap_OpenMVS/build/eigen_build/CMakeFiles/CMakeScratch/TryCompile-1g6j1R'
+Building CXX object CMakeFiles/cmTC_28199.dir/src.cxx.o
+/usr/bin/c++ -DCOMPILER_SUPPORT_STRICTANSI  -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wdouble-promotion -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -Werror   -strict-ansi -o CMakeFiles/cmTC_28199.dir/src.cxx.o -c /home/thomas/Colmap_OpenMVS/build/eigen_build/CMakeFiles/CMakeScratch/TryCompile-1g6j1R/src.cxx
+c++: error: unrecognized command line option '-strict-ansi'; did you mean '-fstrict-enums'?
+make[1]: *** [CMakeFiles/cmTC_28199.dir/build.make:78: CMakeFiles/cmTC_28199.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/thomas/Colmap_OpenMVS/build/eigen_build/CMakeFiles/CMakeScratch/TryCompile-1g6j1R'
+make: *** [Makefile:127: cmTC_28199/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }
+
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_Qunusedarguments failed with the following output:
+Change Dir: /home/thomas/Colmap_OpenMVS/build/eigen_build/CMakeFiles/CMakeScratch/TryCompile-27O3XQ
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_c04ea/fast && /usr/bin/make  -f CMakeFiles/cmTC_c04ea.dir/build.make CMakeFiles/cmTC_c04ea.dir/build
+make[1]: Entering directory '/home/thomas/Colmap_OpenMVS/build/eigen_build/CMakeFiles/CMakeScratch/TryCompile-27O3XQ'
+Building CXX object CMakeFiles/cmTC_c04ea.dir/src.cxx.o
+/usr/bin/c++ -DCOMPILER_SUPPORT_Qunusedarguments  -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wdouble-promotion -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -Werror   -Qunused-arguments -o CMakeFiles/cmTC_c04ea.dir/src.cxx.o -c /home/thomas/Colmap_OpenMVS/build/eigen_build/CMakeFiles/CMakeScratch/TryCompile-27O3XQ/src.cxx
+c++: error: unrecognized command line option '-Qunused-arguments'
+make[1]: *** [CMakeFiles/cmTC_c04ea.dir/build.make:78: CMakeFiles/cmTC_c04ea.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/thomas/Colmap_OpenMVS/build/eigen_build/CMakeFiles/CMakeScratch/TryCompile-27O3XQ'
+make: *** [Makefile:127: cmTC_c04ea/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }
+
+Determining if the Q_WS_WIN exist failed with the following output:
+Change Dir: /home/thomas/Colmap_OpenMVS/build/eigen_build/CMakeFiles/CMakeScratch/TryCompile-HKGQdO
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_27044/fast && /usr/bin/make  -f CMakeFiles/cmTC_27044.dir/build.make CMakeFiles/cmTC_27044.dir/build
+make[1]: Entering directory '/home/thomas/Colmap_OpenMVS/build/eigen_build/CMakeFiles/CMakeScratch/TryCompile-HKGQdO'
+Building CXX object CMakeFiles/cmTC_27044.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++  -I/usr/include/qt4 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wdouble-promotion -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -ansi -O1 -g1  -o CMakeFiles/cmTC_27044.dir/CheckSymbolExists.cxx.o -c /home/thomas/Colmap_OpenMVS/build/eigen_build/CMakeFiles/CMakeScratch/TryCompile-HKGQdO/CheckSymbolExists.cxx
+/home/thomas/Colmap_OpenMVS/build/eigen_build/CMakeFiles/CMakeScratch/TryCompile-HKGQdO/CheckSymbolExists.cxx: In function ‘int main(int, char**)’:
+/home/thomas/Colmap_OpenMVS/build/eigen_build/CMakeFiles/CMakeScratch/TryCompile-HKGQdO/CheckSymbolExists.cxx:8:19: error: ‘Q_WS_WIN’ was not declared in this scope
+    8 |   return ((int*)(&Q_WS_WIN))[argc];
+      |                   ^~~~~~~~
+make[1]: *** [CMakeFiles/cmTC_27044.dir/build.make:78: CMakeFiles/cmTC_27044.dir/CheckSymbolExists.cxx.o] Error 1
+make[1]: Leaving directory '/home/thomas/Colmap_OpenMVS/build/eigen_build/CMakeFiles/CMakeScratch/TryCompile-HKGQdO'
+make: *** [Makefile:127: cmTC_27044/fast] Error 2
+
+
+File CheckSymbolExists.cxx:
+/* */
+#include <QtCore/qglobal.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef Q_WS_WIN
+  return ((int*)(&Q_WS_WIN))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the Q_WS_QWS exist failed with the following output:
+Change Dir: /home/thomas/Colmap_OpenMVS/build/eigen_build/CMakeFiles/CMakeScratch/TryCompile-mWA45N
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_9ac19/fast && /usr/bin/make  -f CMakeFiles/cmTC_9ac19.dir/build.make CMakeFiles/cmTC_9ac19.dir/build
+make[1]: Entering directory '/home/thomas/Colmap_OpenMVS/build/eigen_build/CMakeFiles/CMakeScratch/TryCompile-mWA45N'
+Building CXX object CMakeFiles/cmTC_9ac19.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++  -I/usr/include/qt4 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wdouble-promotion -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -ansi -O1 -g1  -o CMakeFiles/cmTC_9ac19.dir/CheckSymbolExists.cxx.o -c /home/thomas/Colmap_OpenMVS/build/eigen_build/CMakeFiles/CMakeScratch/TryCompile-mWA45N/CheckSymbolExists.cxx
+/home/thomas/Colmap_OpenMVS/build/eigen_build/CMakeFiles/CMakeScratch/TryCompile-mWA45N/CheckSymbolExists.cxx: In function ‘int main(int, char**)’:
+/home/thomas/Colmap_OpenMVS/build/eigen_build/CMakeFiles/CMakeScratch/TryCompile-mWA45N/CheckSymbolExists.cxx:8:19: error: ‘Q_WS_QWS’ was not declared in this scope
+    8 |   return ((int*)(&Q_WS_QWS))[argc];
+      |                   ^~~~~~~~
+make[1]: *** [CMakeFiles/cmTC_9ac19.dir/build.make:78: CMakeFiles/cmTC_9ac19.dir/CheckSymbolExists.cxx.o] Error 1
+make[1]: Leaving directory '/home/thomas/Colmap_OpenMVS/build/eigen_build/CMakeFiles/CMakeScratch/TryCompile-mWA45N'
+make: *** [Makefile:127: cmTC_9ac19/fast] Error 2
+
+
+File CheckSymbolExists.cxx:
+/* */
+#include <QtCore/qglobal.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef Q_WS_QWS
+  return ((int*)(&Q_WS_QWS))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the Q_WS_MAC exist failed with the following output:
+Change Dir: /home/thomas/Colmap_OpenMVS/build/eigen_build/CMakeFiles/CMakeScratch/TryCompile-kIsEUO
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_d5f8b/fast && /usr/bin/make  -f CMakeFiles/cmTC_d5f8b.dir/build.make CMakeFiles/cmTC_d5f8b.dir/build
+make[1]: Entering directory '/home/thomas/Colmap_OpenMVS/build/eigen_build/CMakeFiles/CMakeScratch/TryCompile-kIsEUO'
+Building CXX object CMakeFiles/cmTC_d5f8b.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++  -I/usr/include/qt4 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wdouble-promotion -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -ansi -O1 -g1  -o CMakeFiles/cmTC_d5f8b.dir/CheckSymbolExists.cxx.o -c /home/thomas/Colmap_OpenMVS/build/eigen_build/CMakeFiles/CMakeScratch/TryCompile-kIsEUO/CheckSymbolExists.cxx
+/home/thomas/Colmap_OpenMVS/build/eigen_build/CMakeFiles/CMakeScratch/TryCompile-kIsEUO/CheckSymbolExists.cxx: In function ‘int main(int, char**)’:
+/home/thomas/Colmap_OpenMVS/build/eigen_build/CMakeFiles/CMakeScratch/TryCompile-kIsEUO/CheckSymbolExists.cxx:8:19: error: ‘Q_WS_MAC’ was not declared in this scope
+    8 |   return ((int*)(&Q_WS_MAC))[argc];
+      |                   ^~~~~~~~
+make[1]: *** [CMakeFiles/cmTC_d5f8b.dir/build.make:78: CMakeFiles/cmTC_d5f8b.dir/CheckSymbolExists.cxx.o] Error 1
+make[1]: Leaving directory '/home/thomas/Colmap_OpenMVS/build/eigen_build/CMakeFiles/CMakeScratch/TryCompile-kIsEUO'
+make: *** [Makefile:127: cmTC_d5f8b/fast] Error 2
+
+
+File CheckSymbolExists.cxx:
+/* */
+#include <QtCore/qglobal.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef Q_WS_MAC
+  return ((int*)(&Q_WS_MAC))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/thomas/Colmap_OpenMVS/build/eigen_build/CMakeFiles/CMakeScratch/TryCompile-L86wCN
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_8f7bb/fast && /usr/bin/make  -f CMakeFiles/cmTC_8f7bb.dir/build.make CMakeFiles/cmTC_8f7bb.dir/build
+make[1]: Entering directory '/home/thomas/Colmap_OpenMVS/build/eigen_build/CMakeFiles/CMakeScratch/TryCompile-L86wCN'
+Building C object CMakeFiles/cmTC_8f7bb.dir/src.c.o
+/usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_8f7bb.dir/src.c.o -c /home/thomas/Colmap_OpenMVS/build/eigen_build/CMakeFiles/CMakeScratch/TryCompile-L86wCN/src.c
+Linking C executable cmTC_8f7bb
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8f7bb.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_8f7bb.dir/src.c.o -o cmTC_8f7bb 
+/usr/bin/ld: CMakeFiles/cmTC_8f7bb.dir/src.c.o: in function `main':
+src.c:(.text+0x46): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x5e): undefined reference to `pthread_cancel'
+/usr/bin/ld: src.c:(.text+0x6f): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_8f7bb.dir/build.make:99: cmTC_8f7bb] Error 1
+make[1]: Leaving directory '/home/thomas/Colmap_OpenMVS/build/eigen_build/CMakeFiles/CMakeScratch/TryCompile-L86wCN'
+make: *** [Makefile:127: cmTC_8f7bb/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/thomas/Colmap_OpenMVS/build/eigen_build/CMakeFiles/CMakeScratch/TryCompile-09MLKO
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_c5649/fast && /usr/bin/make  -f CMakeFiles/cmTC_c5649.dir/build.make CMakeFiles/cmTC_c5649.dir/build
+make[1]: Entering directory '/home/thomas/Colmap_OpenMVS/build/eigen_build/CMakeFiles/CMakeScratch/TryCompile-09MLKO'
+Building C object CMakeFiles/cmTC_c5649.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_c5649.dir/CheckFunctionExists.c.o -c /home/thomas/Colmap_OpenMVS/build/eigen_build/CMakeFiles/CMakeScratch/TryCompile-09MLKO/CheckFunctionExists.c
+Linking C executable cmTC_c5649
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c5649.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create -rdynamic CMakeFiles/cmTC_c5649.dir/CheckFunctionExists.c.o -o cmTC_c5649  -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_c5649.dir/build.make:99: cmTC_c5649] Error 1
+make[1]: Leaving directory '/home/thomas/Colmap_OpenMVS/build/eigen_build/CMakeFiles/CMakeScratch/TryCompile-09MLKO'
+make: *** [Makefile:127: cmTC_c5649/fast] Error 2
+
+
+
+Determining if the Fortran dgemm exists failed with the following output:
+Change Dir: /home/thomas/Colmap_OpenMVS/build/eigen_build/CMakeFiles/CMakeScratch/TryCompile-PkFokQ
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_63e91/fast && /usr/bin/make  -f CMakeFiles/cmTC_63e91.dir/build.make CMakeFiles/cmTC_63e91.dir/build
+make[1]: Entering directory '/home/thomas/Colmap_OpenMVS/build/eigen_build/CMakeFiles/CMakeScratch/TryCompile-PkFokQ'
+Building Fortran object CMakeFiles/cmTC_63e91.dir/testFortranCompiler.f.o
+CMAKE_Fortran_COMPILER-NOTFOUND    -c /home/thomas/Colmap_OpenMVS/build/eigen_build/CMakeFiles/CMakeScratch/TryCompile-PkFokQ/testFortranCompiler.f -o CMakeFiles/cmTC_63e91.dir/testFortranCompiler.f.o
+make[1]: CMAKE_Fortran_COMPILER-NOTFOUND: Command not found
+make[1]: *** [CMakeFiles/cmTC_63e91.dir/build.make:78: CMakeFiles/cmTC_63e91.dir/testFortranCompiler.f.o] Error 127
+make[1]: Leaving directory '/home/thomas/Colmap_OpenMVS/build/eigen_build/CMakeFiles/CMakeScratch/TryCompile-PkFokQ'
+make: *** [Makefile:127: cmTC_63e91/fast] Error 2
+
+
+
+Determining if the Fortran dgemm exists failed with the following output:
+Change Dir: /home/thomas/Colmap_OpenMVS/build/eigen_build/CMakeFiles/CMakeScratch/TryCompile-ByizCV
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_25d5d/fast && /usr/bin/make  -f CMakeFiles/cmTC_25d5d.dir/build.make CMakeFiles/cmTC_25d5d.dir/build
+make[1]: Entering directory '/home/thomas/Colmap_OpenMVS/build/eigen_build/CMakeFiles/CMakeScratch/TryCompile-ByizCV'
+Building Fortran object CMakeFiles/cmTC_25d5d.dir/testFortranCompiler.f.o
+CMAKE_Fortran_COMPILER-NOTFOUND    -c /home/thomas/Colmap_OpenMVS/build/eigen_build/CMakeFiles/CMakeScratch/TryCompile-ByizCV/testFortranCompiler.f -o CMakeFiles/cmTC_25d5d.dir/testFortranCompiler.f.o
+make[1]: CMAKE_Fortran_COMPILER-NOTFOUND: Command not found
+make[1]: *** [CMakeFiles/cmTC_25d5d.dir/build.make:78: CMakeFiles/cmTC_25d5d.dir/testFortranCompiler.f.o] Error 127
+make[1]: Leaving directory '/home/thomas/Colmap_OpenMVS/build/eigen_build/CMakeFiles/CMakeScratch/TryCompile-ByizCV'
+make: *** [Makefile:127: cmTC_25d5d/fast] Error 2
+
+
+

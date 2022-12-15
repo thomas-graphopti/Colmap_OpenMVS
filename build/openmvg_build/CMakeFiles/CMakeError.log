@@ -1,0 +1,133 @@
+Performing C SOURCE FILE Test check_c_compiler_flag__march_merom failed with the following output:
+Change Dir: /home/thomas/Colmap_OpenMVS/build/openmvg_build/CMakeFiles/CMakeScratch/TryCompile-49r5Bl
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_38a32/fast && /usr/bin/make  -f CMakeFiles/cmTC_38a32.dir/build.make CMakeFiles/cmTC_38a32.dir/build
+make[1]: Entering directory '/home/thomas/Colmap_OpenMVS/build/openmvg_build/CMakeFiles/CMakeScratch/TryCompile-49r5Bl'
+Building C object CMakeFiles/cmTC_38a32.dir/src.c.o
+/usr/bin/cc -Dcheck_c_compiler_flag__march_merom  -march=merom -o CMakeFiles/cmTC_38a32.dir/src.c.o -c /home/thomas/Colmap_OpenMVS/build/openmvg_build/CMakeFiles/CMakeScratch/TryCompile-49r5Bl/src.c
+cc1: error: bad value (‘merom’) for ‘-march=’ switch
+cc1: note: valid arguments to ‘-march=’ switch are: nocona core2 nehalem corei7 westmere sandybridge corei7-avx ivybridge core-avx-i haswell core-avx2 broadwell skylake skylake-avx512 cannonlake icelake-client icelake-server cascadelake tigerlake bonnell atom silvermont slm goldmont goldmont-plus tremont knl knm x86-64 eden-x2 nano nano-1000 nano-2000 nano-3000 nano-x2 eden-x4 nano-x4 k8 k8-sse3 opteron opteron-sse3 athlon64 athlon64-sse3 athlon-fx amdfam10 barcelona bdver1 bdver2 bdver3 bdver4 znver1 znver2 btver1 btver2 native
+make[1]: *** [CMakeFiles/cmTC_38a32.dir/build.make:78: CMakeFiles/cmTC_38a32.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/thomas/Colmap_OpenMVS/build/openmvg_build/CMakeFiles/CMakeScratch/TryCompile-49r5Bl'
+make: *** [Makefile:127: cmTC_38a32/fast] Error 2
+
+
+Source file was:
+int main() { return 0;}
+
+Performing C++ SOURCE FILE Test check_cxx_compiler_flag__march_merom failed with the following output:
+Change Dir: /home/thomas/Colmap_OpenMVS/build/openmvg_build/CMakeFiles/CMakeScratch/TryCompile-s05psi
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_2a591/fast && /usr/bin/make  -f CMakeFiles/cmTC_2a591.dir/build.make CMakeFiles/cmTC_2a591.dir/build
+make[1]: Entering directory '/home/thomas/Colmap_OpenMVS/build/openmvg_build/CMakeFiles/CMakeScratch/TryCompile-s05psi'
+Building CXX object CMakeFiles/cmTC_2a591.dir/src.cxx.o
+/usr/bin/c++ -Dcheck_cxx_compiler_flag__march_merom  -march=merom -o CMakeFiles/cmTC_2a591.dir/src.cxx.o -c /home/thomas/Colmap_OpenMVS/build/openmvg_build/CMakeFiles/CMakeScratch/TryCompile-s05psi/src.cxx
+cc1plus: error: bad value (‘merom’) for ‘-march=’ switch
+cc1plus: note: valid arguments to ‘-march=’ switch are: nocona core2 nehalem corei7 westmere sandybridge corei7-avx ivybridge core-avx-i haswell core-avx2 broadwell skylake skylake-avx512 cannonlake icelake-client icelake-server cascadelake tigerlake bonnell atom silvermont slm goldmont goldmont-plus tremont knl knm x86-64 eden-x2 nano nano-1000 nano-2000 nano-3000 nano-x2 eden-x4 nano-x4 k8 k8-sse3 opteron opteron-sse3 athlon64 athlon64-sse3 athlon-fx amdfam10 barcelona bdver1 bdver2 bdver3 bdver4 znver1 znver2 btver1 btver2 native
+make[1]: *** [CMakeFiles/cmTC_2a591.dir/build.make:78: CMakeFiles/cmTC_2a591.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/thomas/Colmap_OpenMVS/build/openmvg_build/CMakeFiles/CMakeScratch/TryCompile-s05psi'
+make: *** [Makefile:127: cmTC_2a591/fast] Error 2
+
+
+Source file was:
+int main() { return 0;}
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/thomas/Colmap_OpenMVS/build/openmvg_build/CMakeFiles/CMakeScratch/TryCompile-OsXrel
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_51404/fast && /usr/bin/make  -f CMakeFiles/cmTC_51404.dir/build.make CMakeFiles/cmTC_51404.dir/build
+make[1]: Entering directory '/home/thomas/Colmap_OpenMVS/build/openmvg_build/CMakeFiles/CMakeScratch/TryCompile-OsXrel'
+Building C object CMakeFiles/cmTC_51404.dir/src.c.o
+/usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD  -march=core2 -msse2 -msse3 -mssse3 -mno-sse4.1 -mno-sse4.2 -mno-sse4a -mno-avx -mno-fma -mno-bmi2 -mno-avx2 -mno-xop -mno-fma4 -mno-avx512f -mno-avx512vl -mno-avx512pf -mno-avx512er -mno-avx512cd -mno-avx512dq -mno-avx512bw -mno-avx512ifma -mno-avx512vbmi  -o CMakeFiles/cmTC_51404.dir/src.c.o -c /home/thomas/Colmap_OpenMVS/build/openmvg_build/CMakeFiles/CMakeScratch/TryCompile-OsXrel/src.c
+Linking C executable cmTC_51404
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_51404.dir/link.txt --verbose=1
+/usr/bin/cc  -march=core2 -msse2 -msse3 -mssse3 -mno-sse4.1 -mno-sse4.2 -mno-sse4a -mno-avx -mno-fma -mno-bmi2 -mno-avx2 -mno-xop -mno-fma4 -mno-avx512f -mno-avx512vl -mno-avx512pf -mno-avx512er -mno-avx512cd -mno-avx512dq -mno-avx512bw -mno-avx512ifma -mno-avx512vbmi  CMakeFiles/cmTC_51404.dir/src.c.o -o cmTC_51404 
+/usr/bin/ld: CMakeFiles/cmTC_51404.dir/src.c.o: in function `main':
+src.c:(.text+0x46): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x5e): undefined reference to `pthread_cancel'
+/usr/bin/ld: src.c:(.text+0x6f): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_51404.dir/build.make:99: cmTC_51404] Error 1
+make[1]: Leaving directory '/home/thomas/Colmap_OpenMVS/build/openmvg_build/CMakeFiles/CMakeScratch/TryCompile-OsXrel'
+make: *** [Makefile:127: cmTC_51404/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/thomas/Colmap_OpenMVS/build/openmvg_build/CMakeFiles/CMakeScratch/TryCompile-2R91Dm
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_59b59/fast && /usr/bin/make  -f CMakeFiles/cmTC_59b59.dir/build.make CMakeFiles/cmTC_59b59.dir/build
+make[1]: Entering directory '/home/thomas/Colmap_OpenMVS/build/openmvg_build/CMakeFiles/CMakeScratch/TryCompile-2R91Dm'
+Building C object CMakeFiles/cmTC_59b59.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -march=core2 -msse2 -msse3 -mssse3 -mno-sse4.1 -mno-sse4.2 -mno-sse4a -mno-avx -mno-fma -mno-bmi2 -mno-avx2 -mno-xop -mno-fma4 -mno-avx512f -mno-avx512vl -mno-avx512pf -mno-avx512er -mno-avx512cd -mno-avx512dq -mno-avx512bw -mno-avx512ifma -mno-avx512vbmi -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_59b59.dir/CheckFunctionExists.c.o -c /home/thomas/Colmap_OpenMVS/build/openmvg_build/CMakeFiles/CMakeScratch/TryCompile-2R91Dm/CheckFunctionExists.c
+Linking C executable cmTC_59b59
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_59b59.dir/link.txt --verbose=1
+/usr/bin/cc  -march=core2 -msse2 -msse3 -mssse3 -mno-sse4.1 -mno-sse4.2 -mno-sse4a -mno-avx -mno-fma -mno-bmi2 -mno-avx2 -mno-xop -mno-fma4 -mno-avx512f -mno-avx512vl -mno-avx512pf -mno-avx512er -mno-avx512cd -mno-avx512dq -mno-avx512bw -mno-avx512ifma -mno-avx512vbmi -DCHECK_FUNCTION_EXISTS=pthread_create CMakeFiles/cmTC_59b59.dir/CheckFunctionExists.c.o -o cmTC_59b59  -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_59b59.dir/build.make:99: cmTC_59b59] Error 1
+make[1]: Leaving directory '/home/thomas/Colmap_OpenMVS/build/openmvg_build/CMakeFiles/CMakeScratch/TryCompile-2R91Dm'
+make: *** [Makefile:127: cmTC_59b59/fast] Error 2
+
+
+
+Determining if the function sgemm_ exists failed with the following output:
+Change Dir: /home/thomas/Colmap_OpenMVS/build/openmvg_build/CMakeFiles/CMakeScratch/TryCompile-Oo66oi
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_d3a08/fast && /usr/bin/make  -f CMakeFiles/cmTC_d3a08.dir/build.make CMakeFiles/cmTC_d3a08.dir/build
+make[1]: Entering directory '/home/thomas/Colmap_OpenMVS/build/openmvg_build/CMakeFiles/CMakeScratch/TryCompile-Oo66oi'
+Building C object CMakeFiles/cmTC_d3a08.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -march=core2 -msse2 -msse3 -mssse3 -mno-sse4.1 -mno-sse4.2 -mno-sse4a -mno-avx -mno-fma -mno-bmi2 -mno-avx2 -mno-xop -mno-fma4 -mno-avx512f -mno-avx512vl -mno-avx512pf -mno-avx512er -mno-avx512cd -mno-avx512dq -mno-avx512bw -mno-avx512ifma -mno-avx512vbmi -DCHECK_FUNCTION_EXISTS=sgemm_ -o CMakeFiles/cmTC_d3a08.dir/CheckFunctionExists.c.o -c /home/thomas/Colmap_OpenMVS/build/openmvg_build/CMakeFiles/CMakeScratch/TryCompile-Oo66oi/CheckFunctionExists.c
+Linking C executable cmTC_d3a08
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d3a08.dir/link.txt --verbose=1
+/usr/bin/cc  -march=core2 -msse2 -msse3 -mssse3 -mno-sse4.1 -mno-sse4.2 -mno-sse4a -mno-avx -mno-fma -mno-bmi2 -mno-avx2 -mno-xop -mno-fma4 -mno-avx512f -mno-avx512vl -mno-avx512pf -mno-avx512er -mno-avx512cd -mno-avx512dq -mno-avx512bw -mno-avx512ifma -mno-avx512vbmi -DCHECK_FUNCTION_EXISTS=sgemm_ CMakeFiles/cmTC_d3a08.dir/CheckFunctionExists.c.o -o cmTC_d3a08 
+/usr/bin/ld: CMakeFiles/cmTC_d3a08.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x14): undefined reference to `sgemm_'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_d3a08.dir/build.make:99: cmTC_d3a08] Error 1
+make[1]: Leaving directory '/home/thomas/Colmap_OpenMVS/build/openmvg_build/CMakeFiles/CMakeScratch/TryCompile-Oo66oi'
+make: *** [Makefile:127: cmTC_d3a08/fast] Error 2
+
+
+
+Determining if the function cheev_ exists failed with the following output:
+Change Dir: /home/thomas/Colmap_OpenMVS/build/openmvg_build/CMakeFiles/CMakeScratch/TryCompile-kLaO1l
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_47289/fast && /usr/bin/make  -f CMakeFiles/cmTC_47289.dir/build.make CMakeFiles/cmTC_47289.dir/build
+make[1]: Entering directory '/home/thomas/Colmap_OpenMVS/build/openmvg_build/CMakeFiles/CMakeScratch/TryCompile-kLaO1l'
+Building C object CMakeFiles/cmTC_47289.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -march=core2 -msse2 -msse3 -mssse3 -mno-sse4.1 -mno-sse4.2 -mno-sse4a -mno-avx -mno-fma -mno-bmi2 -mno-avx2 -mno-xop -mno-fma4 -mno-avx512f -mno-avx512vl -mno-avx512pf -mno-avx512er -mno-avx512cd -mno-avx512dq -mno-avx512bw -mno-avx512ifma -mno-avx512vbmi -DCHECK_FUNCTION_EXISTS=cheev_ -o CMakeFiles/cmTC_47289.dir/CheckFunctionExists.c.o -c /home/thomas/Colmap_OpenMVS/build/openmvg_build/CMakeFiles/CMakeScratch/TryCompile-kLaO1l/CheckFunctionExists.c
+Linking C executable cmTC_47289
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_47289.dir/link.txt --verbose=1
+/usr/bin/cc  -march=core2 -msse2 -msse3 -mssse3 -mno-sse4.1 -mno-sse4.2 -mno-sse4a -mno-avx -mno-fma -mno-bmi2 -mno-avx2 -mno-xop -mno-fma4 -mno-avx512f -mno-avx512vl -mno-avx512pf -mno-avx512er -mno-avx512cd -mno-avx512dq -mno-avx512bw -mno-avx512ifma -mno-avx512vbmi -DCHECK_FUNCTION_EXISTS=cheev_ CMakeFiles/cmTC_47289.dir/CheckFunctionExists.c.o -o cmTC_47289  /usr/lib/x86_64-linux-gnu/libblas.so /usr/lib/x86_64-linux-gnu/libf77blas.so /usr/lib/x86_64-linux-gnu/libatlas.so -lpthread -lm -ldl 
+/usr/bin/ld: CMakeFiles/cmTC_47289.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x14): undefined reference to `cheev_'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_47289.dir/build.make:102: cmTC_47289] Error 1
+make[1]: Leaving directory '/home/thomas/Colmap_OpenMVS/build/openmvg_build/CMakeFiles/CMakeScratch/TryCompile-kLaO1l'
+make: *** [Makefile:127: cmTC_47289/fast] Error 2
+
+
+
