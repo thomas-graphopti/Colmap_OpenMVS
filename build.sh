@@ -82,7 +82,7 @@ git clone https://github.com/pmoulon/CMVS-PMVS ${TMP}/cmvs-pmvs && \
 
 # Install colmap
 # master and dev broken so commenting for now
-#git clone -b master https://github.com/colmap/colmap /tmp/build/colmap && \
+# git clone -b master https://github.com/colmap/colmap /tmp/build/colmap && \
 #  mkdir -p /tmp/build/colmap_build && cd /tmp/build/colmap_build && \
 #  cmake . ../colmap -DCMAKE_INSTALL_PREFIX=/opt/colmap && \
 #  make -j4 && \

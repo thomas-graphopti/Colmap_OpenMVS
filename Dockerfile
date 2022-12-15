@@ -1,4 +1,5 @@
-FROM ubuntu:20.04
+#FROM ubuntu:20.04
+FROM nvidia/cuda:11.6.0-devel-ubuntu20.04
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update -qq && apt-get upgrade -qq
 
@@ -57,14 +58,14 @@ WORKDIR /tmp/build
 RUN git clone -b develop --recursive https://github.com/openMVG/openMVG.git openmvg && \
   mkdir openmvg_build && cd openmvg_build && \
   cmake -DCMAKE_BUILD_TYPE=RELEASE . ../openmvg/src -DCMAKE_INSTALL_PREFIX=/opt/openmvg && \
-  make -j4  && \
+  make -j18  && \
   make install
 
 # Install eigen
-RUN git clone https://gitlab.com/libeigen/eigen.git --branch 3.3.4 && \
+RUN git clone https://gitlab.com/libeigen/eigen.git --branch 3.4 && \
   mkdir eigen_build && cd eigen_build && \
   cmake . ../eigen && \
-  make -j4 && \
+  make -j18 && \
   make install 
 
 # Get vcglib
@@ -75,22 +76,22 @@ RUN git clone https://ceres-solver.googlesource.com/ceres-solver ceres_solver &&
   cd ceres_solver && git checkout tags/1.14.0 && cd .. && \
   mkdir ceres_build && cd ceres_build && \
   cmake . ../ceres_solver/ -DMINIGLOG=OFF -DBUILD_TESTING=OFF -DBUILD_EXAMPLES=OFF && \
-  make -j4 && \
+  make -j18 && \
   make install
 
 RUN apt-get update && apt-get install -y libglfw3 libglfw3-dev
 # Install openmvs
 RUN git clone https://github.com/cdcseacave/openMVS.git openmvs && \
   mkdir openmvs_build && cd openmvs_build && \
-  cmake . ../openmvs -DCMAKE_BUILD_TYPE=Release -DVCG_DIR="../vcglib" -DCMAKE_INSTALL_PREFIX=/opt/openmvs && \
-  make -j4 && \
+  cmake . ../openmvs -DOpenMVS_USE_CUDA=ON -DCMAKE_BUILD_TYPE=Release -DVCG_DIR="../vcglib" -DCMAKE_INSTALL_PREFIX=/opt/openmvs && \
+  make -j18 && \
   make install
 
 # Install cmvs-pmvs
 RUN git clone https://github.com/pmoulon/CMVS-PMVS /tmp/build/cmvs-pmvs && \
   mkdir /tmp/build/cmvs-pmvs_build && cd /tmp/build/cmvs-pmvs_build && \
   cmake ../cmvs-pmvs/program -DCMAKE_INSTALL_PREFIX=/opt/cmvs && \
-  make -j4 && \
+  make -j18 && \
   make install
 
 RUN apt-get update && apt-get install -y \
@@ -111,17 +112,25 @@ RUN apt-get update && apt-get install -y \
   libglew-dev \
   qtbase5-dev \
   libqt5opengl5-dev \
-  libcgal-dev
+  libcgal-dev \
+  qt5-default 
+
+
+RUN apt install ubuntu-drivers-common -y
+RUN ubuntu-drivers autoinstall
+
 
 # Install colmap
 # Both master and dev seem broken so commented out for now
 RUN git clone -b dev https://github.com/colmap/colmap /tmp/build/colmap && \
   mkdir -p /tmp/build/colmap_build && cd /tmp/build/colmap_build && \
-  cmake . ../colmap -DCMAKE_INSTALL_PREFIX=/opt/colmap && \
-  make -j1 && \
+  cmake . ../colmap -DCMAKE_INSTALL_PREFIX=/opt/colmap -DGUI_ENABLE=FALSE -DCUDA_ENABLE=FALSE -DQT_QPA_PLATFORM=offscreen && \
+  #sudo cmake . ../colmap -DCMAKE_INSTALL_PREFIX=/opt/colmap -DGUI_ENABLE=FALSE -DCUDA_ENABLE=FALSE -DQT_QPA_PLATFORM=offscreen -DCMAKE_CUDA_COMPILER=/usr/local/cuda/bin/nvcc
+  make -j18 && \
   make install
 
 # ..and then create a more lightweight image to actually run stuff in.
+#FROM updated
 ENV DEBIAN_FRONTEND=noninteractive
 ARG UID=1000
 ARG GID=1000
@@ -150,7 +159,26 @@ RUN apt-get update && apt-get install -y \
   libglew2.1 \
   libcholmod3 \
   libcxsparse3 \
-  python2-minimal
+  python2-minimal \
+  git \
+  cmake \
+  build-essential \
+  libboost-program-options-dev \
+  libboost-filesystem-dev \
+  libboost-graph-dev \
+  libboost-system-dev \
+  libboost-test-dev \
+  libeigen3-dev \
+  libsuitesparse-dev \
+  libfreeimage-dev \
+  libmetis-dev \
+  libgoogle-glog-dev \
+  libgflags-dev \
+  libglew-dev \
+  qtbase5-dev \
+  libqt5opengl5-dev \
+  libcgal-dev \
+  qt5-default
 RUN update-alternatives --install /usr/bin/python python /usr/bin/python2 1
 #COPY --from=build /opt /opt
 COPY pipeline.py /opt/dpg/pipeline.py

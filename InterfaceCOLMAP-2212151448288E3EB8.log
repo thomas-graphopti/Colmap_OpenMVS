@@ -1,0 +1,17 @@
+14:48:28 [App     ] Build date: Dec 15 2022, 10:59:51
+14:48:28 [App     ] CPU: 12th Gen Intel(R) Core(TM) i7-12700 (20 cores)
+14:48:28 [App     ] RAM: 31.08GB Physical Memory 2.00GB Virtual Memory
+14:48:28 [App     ] OS: Linux 5.13.0-30-generic (x86_64)
+14:48:28 [App     ] Disk: 75.87GB (287.37GB) space
+14:48:28 [App     ] SSE & AVX compatible CPU & OS detected
+14:48:28 [App     ] Command line: InterfaceCOLMAP -i /tmp/example/dense --output-file /tmp/example/output/omvs/scene.mvs
+14:48:28 [App     ] Reading cameras: /tmp/example/dense/sparse/cameras.txt
+14:48:28 [App     ] Reading images: /tmp/example/dense/sparse/images.txt
+14:48:28 [App     ] Reading points: /tmp/example/dense/sparse/points3D.txt
+14:48:28 [App     ] Reading patch-match configuration: /tmp/example/dense/stereo/patch-match.cfg
+14:48:28 [App     ] Reading depth-maps/normal-maps: /tmp/example/dense/stereo/depth_maps/ and /tmp/example/dense/stereo/normal_maps/
+14:48:28 [App     ] Exported data: 11 images & 7878 vertices (61ms)
+14:48:28 [App     ] MEMORYINFO: {
+14:48:28 [App     ] 	VmPeak:	   69544 kB
+14:48:28 [App     ] 	VmSize:	   68604 kB
+14:48:28 [App     ] } ENDINFO

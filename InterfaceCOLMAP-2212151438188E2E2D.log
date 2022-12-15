@@ -1,0 +1,9 @@
+14:38:18 [App     ] Build date: Dec 15 2022, 10:59:51
+14:38:18 [App     ] CPU: 12th Gen Intel(R) Core(TM) i7-12700 (20 cores)
+14:38:18 [App     ] RAM: 31.08GB Physical Memory 2.00GB Virtual Memory
+14:38:18 [App     ] OS: Linux 5.13.0-30-generic (x86_64)
+14:38:18 [App     ] Disk: 75.88GB (287.37GB) space
+14:38:18 [App     ] SSE & AVX compatible CPU & OS detected
+14:38:18 [App     ] Command line: InterfaceCOLMAP -i /tmp/example/sparse/0 --output-file /tmp/example/output/omvs/scene.mvs
+14:38:18 [App     ] error: unable to open file '/tmp/example/sparse/0/sparse/cameras.txt'
+14:38:18 [App     ] error: unable to open file '/tmp/example/sparse/0/sparse/cameras.bin'

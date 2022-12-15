@@ -1,0 +1,7 @@
+14:49:38 [App     ] Build date: Dec 15 2022, 10:59:51
+14:49:38 [App     ] CPU: 12th Gen Intel(R) Core(TM) i7-12700 (20 cores)
+14:49:38 [App     ] RAM: 31.08GB Physical Memory 2.00GB Virtual Memory
+14:49:38 [App     ] OS: Linux 5.13.0-30-generic (x86_64)
+14:49:38 [App     ] Disk: 75.87GB (287.37GB) space
+14:49:38 [App     ] SSE & AVX compatible CPU & OS detected
+14:49:38 [App     ] Command line: ReconstructMesh scene.mvs -v 0

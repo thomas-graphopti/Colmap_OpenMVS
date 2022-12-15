@@ -7,12 +7,15 @@ Photogrammetry pipeline using [OpenMVG](https://github.com/openMVG/openMVG) and 
 ## Installation
 
 ### Docker
+
 You can either use `spedenaave/dpg` image from the docker hub or build it by yourself by first cloning the repository and then using `docker build -t dpg .` command.
 
 Be adviced that the default setting of docker for windows and mac only give the container access to a very limited amount of system resources. You can increase the amount of cpu cores and memory from the advanced settings.
 
 ### Linux (or Windows Subsystem for Linux)
+
 This method will build and install required binaries directly to your linux installation. **It is not recommended!**
+
 ```
 git clone https://github.com/rennu/dpg /tmp/dpg && cd /tmp/dpg
 sudo ./build.sh
@@ -23,10 +26,12 @@ sudo ./build.sh
 ### Mesh Reconstruction with Textures by using Incremental Structure from Motion
 
 In this short example we first clone an example dataset to /tmp/example, then start docker with -v argument to mount /tmp/example to /datasets inside the container, and finally we the run pipeline.
+
 ```
 git clone https://github.com/openMVG/ImageDataset_SceauxCastle /tmp/example
 docker run -v /tmp/example:/datasets --rm -it spedenaave/dpg
 pipeline.py --input /datasets/images --output /datasets/output --sfm-type incremental --geomodel f --run-openmvg --run-openmvs
+colmap_mvs_pipeline.py --input /datasets/images --output /datasets/output --sfm-type incremental --geomodel f --run-colmap --run-openmvs
 ```
 
 You should now have a reconstructed model at /tmp/example/omvs folder. Use meshlab or something similar to open it. The end result should look something like this:
@@ -52,13 +57,13 @@ You should now have a reconstructed model at /tmp/example/omvs folder. Use meshl
             Select SfM mode from Global SfM or Incremental SfM. Possible values:
             incremental
             global
-        
+
         --run-openmvg
             Run OpenMVG SfM pipeline
 
         --run-openmvs
             Run OpenMVS MVS pipeline
-        
+
     Optional settings:
 
         --recompute
@@ -66,7 +71,7 @@ You should now have a reconstructed model at /tmp/example/omvs folder. Use meshl
 
         --openmvg [path]
             Set OpenMVG install location
-        
+
         --openmvs [path]
             Set OpenMVS install location
 
@@ -117,7 +122,7 @@ You should now have a reconstructed model at /tmp/example/omvs folder. Use meshl
                     For Global SfM
                 h: Homography matrix filtering
                     For datasets that have same point of projection
-        
+
             --matching [string]
                 Compute Matches Nearest Matching Method:
                 BRUTEFORCEL2: BruteForce L2 matching for Scalar based regions descriptor,
@@ -158,7 +163,7 @@ You should now have a reconstructed model at /tmp/example/omvs folder. Use meshl
             --densify
                 Enable dense reconstruction
                 Default: Off
-            
+
             --densify-only
                 Only densify (duh)
 
@@ -166,7 +171,7 @@ You should now have a reconstructed model at /tmp/example/omvs folder. Use meshl
                 Number of views used for depth-map estimation
                 0 all neighbor views available
                 Default: 4
-        
+
             --dnumviewsfuse [int]
                 Minimum number of images that agrees with an estimate during fusion in order to consider it
                 inliner
@@ -176,18 +181,18 @@ You should now have a reconstructed model at /tmp/example/omvs folder. Use meshl
                 How many times to scale down the images before point cloud computation. For better accuracy/speed width
                 high resolution images use 2 or even 3
                 Default: 1
-        
+
         ReconstructMesh:
 
             --rcthickness [int]
                 ReconstructMesh Thickness Factor
                 Default: 2
-            
+
             --rcdistance [int]
                 Minimum distance in pixels between the projection of two 3D points to consider them different while
                 triangulating (0 to disable). Use to reduce amount of memory used with a penalty of lost detail
                 Default: 2
-        
+
         RefineMesh:
 
             --rmiterations [int]
@@ -200,10 +205,9 @@ You should now have a reconstructed model at /tmp/example/omvs folder. Use meshl
 
             --rmcuda
                 Use CUDA version of RefineMesh binary (will fall back the executable is not found)
-        
+
         Texture Mesh:
 
             --txemptycolor [int]
                 Color of surfaces OpenMVS TextureMesh is unable to texture.
                 Default: 0 (black)
-        
