@@ -323,6 +323,11 @@ def createCommands(args):
     cameraSensorsDB = "/opt/openmvg/share/openMVG/sensor_width_camera_database.txt"
     openmvsBin = "/opt/openmvs/bin/OpenMVS"
     colmapBin = "/opt/colmap/bin"
+    colmap_working_foler = inputDirectory
+    colmap_images_folder = os.path.join(colmap_working_foler, "images")
+    colmap_database_folder = os.path.join(colmap_working_foler,
+                                              "database.db")
+    colmap_output_folder = os.path.join(colmap_working_foler, "sparse")
 
     if args.openmvg != None:
         openmvgBin = os.path.join(args.openmvg, "bin")
@@ -334,11 +339,7 @@ def createCommands(args):
 
     if args.colmap != None:
         colmapBin = os.path.join(args.colmap, "bin")
-        colmap_working_foler = inputDirectory
-        colmap_images_folder = os.path.join(colmap_working_foler, "images")
-        colmap_database_folder = os.path.join(colmap_working_foler,
-                                              "database.db")
-        colmap_output_folder = os.path.join(colmap_working_foler, "sparse")
+       
 
     if args.use_gpu != None:
         use_gpu = '1'
@@ -577,9 +578,9 @@ def createCommands(args):
             "title":
             "Colmap feature_extractor",
             "command": [
-                os.path.join(colmapBin, "feature_extractor"),
+                os.path.join(colmapBin, "colmap feature_extractor"),
                 "--SiftExtraction.use_gpu",
-                use_gpu,
+                '1',
                 "--ImageReader.camera_model",
                 "SIMPLE_RADIAL",
                 "--database_path",
@@ -595,9 +596,9 @@ def createCommands(args):
             "title":
             "colmap exhaustive_matcher",
             "command": [
-                os.path.join(colmapBin, "exhaustive_matcher"),
+                os.path.join(colmapBin, "colmap exhaustive_matcher"),
                 "--SiftExtraction.use_gpu",
-                use_gpu,
+                '1',
                 "--ImageReader.camera_model",
                 "SIMPLE_RADIAL",
                 "--database_path",
@@ -614,7 +615,7 @@ def createCommands(args):
             "title":
             "colmap mapper",
             "command": [
-                os.path.join(colmapBin, "mapper"),
+                os.path.join(colmapBin, "colmap mapper"),
                 "--database_path",
                 colmap_database_folder,
                 "--image_path",
@@ -632,7 +633,7 @@ def createCommands(args):
             "title":
             "colmap image_undistorter",
             "command": [
-                os.path.join(colmapBin, "image_undistorter"),
+                os.path.join(colmapBin, "colmap image_undistorter"),
                 "--image_path",
                 colmap_images_folder,
                 "--input_path",
@@ -651,7 +652,7 @@ def createCommands(args):
             "title":
             "colmap model_converter",
             "command": [
-                os.path.join(colmapBin, "model_converter"),
+                os.path.join(colmapBin, "colmap model_converter"),
                 "--input_path",
                 os.path.join(colmap_output_folder, "dense"),
                 "--output_path",
@@ -676,10 +677,8 @@ def createCommands(args):
                 os.path.join(openmvsBin, "InterfaceCOLMAP"),
                 "-i",
                 os.path.join(colmap_working_foler, "dense"),
-                "-o",
+                "--output-file",
                 os.path.join(MVSDirectory, "scene.mvs"),
-                "-d",
-                MVSDirectory,
             ],
         })
 
@@ -775,12 +774,17 @@ def createCommands(args):
 
 
 def runCommand(cmd):
+  #  print("cmd len:".join(len(cmd)))
+  #  print("cmd:".join(cmd[0]))
+    print(" cmd: ".join(cmd))
+
     cwd = outputDirectory
-    if "OpenMVS" in cmd[0]:
+    if "OpenMVS" in cmd:
         cwd = MVSDirectory
     try:
         p = subprocess.Popen(cmd, cwd=cwd)
         p.communicate()
+        print("!!!!!!!!!returncode".join(p.returncode))
         return p.returncode
     except OSError as err:
         if err.errno == errno.ENOENT:
@@ -788,7 +792,7 @@ def runCommand(cmd):
                 "Could not find executable: {0} - Have you installed all the requirements?"
                 .format(cmd[0]))
         else:
-            print("Could not run command: {0}".format(err))
+            print("Could not run command flag1: {0}".format(err))
         return -1
     except:
         print("Could not run command")
