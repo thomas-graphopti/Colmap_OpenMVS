@@ -1,0 +1,27 @@
+17:24:34 [App     ] Build date: Dec 15 2022, 17:49:18
+17:24:34 [App     ] CPU: 12th Gen Intel(R) Core(TM) i7-12700 (20 cores)
+17:24:34 [App     ] RAM: 31.08GB Physical Memory 2.00GB Virtual Memory
+17:24:34 [App     ] OS: Linux 5.13.0-30-generic (x86_64)
+17:24:34 [App     ] Disk: 20.84GB (287.37GB) space
+17:24:34 [App     ] SSE & AVX compatible CPU & OS detected
+17:24:34 [App     ] Command line: InterfaceMVSNet --help
+17:24:34 [App     ] Available options:
+
+Generic options:
+  -h [ --help ]                         produce this help message
+  -w [ --working-folder ] arg           working directory (default current 
+                                        directory)
+  -c [ --config-file ] arg (=InterfaceMVSNet.cfg)
+                                        file name containing program options
+  --archive-type arg (=4294967295)      project archive type: 0-text, 1-binary,
+                                        2-compressed binary
+  --process-priority arg (=-1)          process priority (below normal by 
+                                        default)
+  --max-threads arg (=0)                maximum number of threads (0 for using 
+                                        all available cores)
+  -v [ --verbosity ] arg (=2)           verbosity level
+
+Main options:
+  -i [ --input-file ] arg               input filename containing camera poses 
+                                        and image list
+  -o [ --output-file ] arg              output filename for storing the mesh
