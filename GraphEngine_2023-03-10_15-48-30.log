@@ -1,0 +1,105 @@
+2023-03-10 15:48:30,584 - INFO - Running the COLMAP-OPENMVS pipeline on thomas-XPS-8950
+2023-03-10 15:48:30,584 - INFO - The start time is 2023-03-10 15:48:30.584495
+2023-03-10 15:48:30,584 - INFO - Machine: x86_64
+2023-03-10 15:48:30,585 - INFO - Platform: Linux-5.13.0-30-generic-x86_64-with-glibc2.31
+2023-03-10 15:48:30,585 - INFO - Processor: x86_64
+2023-03-10 15:48:30,585 - INFO - Operating system: posix Linux 5.13.0-30-generic
+2023-03-10 15:48:30,604 - INFO - CPU count: 20
+2023-03-10 15:48:30,605 - INFO - CPU frequency: 2.2540500000000008
+2023-03-10 15:48:30,605 - INFO - Disk name: /dev/nvme0n1p7, Mount point: /, Filesystem type: ext4
+2023-03-10 15:48:30,605 - INFO - Disk total space: 287.37GB
+2023-03-10 15:48:30,605 - INFO - Disk used space: 265.35GB
+2023-03-10 15:48:30,605 - INFO - Disk free space: 7.35GB
+2023-03-10 15:48:30,605 - INFO - Disk name: /dev/loop0, Mount point: /snap/bare/5, Filesystem type: squashfs
+2023-03-10 15:48:30,605 - INFO - Disk total space: 0.00GB
+2023-03-10 15:48:30,605 - INFO - Disk used space: 0.00GB
+2023-03-10 15:48:30,605 - INFO - Disk free space: 0.00GB
+2023-03-10 15:48:30,605 - INFO - Disk name: /dev/loop3, Mount point: /snap/ogre-meshviewer/566, Filesystem type: squashfs
+2023-03-10 15:48:30,605 - INFO - Disk total space: 0.07GB
+2023-03-10 15:48:30,605 - INFO - Disk used space: 0.07GB
+2023-03-10 15:48:30,605 - INFO - Disk free space: 0.00GB
+2023-03-10 15:48:30,605 - INFO - Disk name: /dev/loop1, Mount point: /snap/cmake/1090, Filesystem type: squashfs
+2023-03-10 15:48:30,605 - INFO - Disk total space: 0.11GB
+2023-03-10 15:48:30,605 - INFO - Disk used space: 0.11GB
+2023-03-10 15:48:30,605 - INFO - Disk free space: 0.00GB
+2023-03-10 15:48:30,606 - INFO - Disk name: /dev/loop2, Mount point: /snap/gnome-3-38-2004/115, Filesystem type: squashfs
+2023-03-10 15:48:30,606 - INFO - Disk total space: 0.34GB
+2023-03-10 15:48:30,606 - INFO - Disk used space: 0.34GB
+2023-03-10 15:48:30,606 - INFO - Disk free space: 0.00GB
+2023-03-10 15:48:30,606 - INFO - Disk name: /dev/loop4, Mount point: /snap/core18/2679, Filesystem type: squashfs
+2023-03-10 15:48:30,606 - INFO - Disk total space: 0.05GB
+2023-03-10 15:48:30,606 - INFO - Disk used space: 0.05GB
+2023-03-10 15:48:30,606 - INFO - Disk free space: 0.00GB
+2023-03-10 15:48:30,606 - INFO - Disk name: /dev/loop7, Mount point: /snap/snap-store/638, Filesystem type: squashfs
+2023-03-10 15:48:30,606 - INFO - Disk total space: 0.04GB
+2023-03-10 15:48:30,606 - INFO - Disk used space: 0.04GB
+2023-03-10 15:48:30,606 - INFO - Disk free space: 0.00GB
+2023-03-10 15:48:30,606 - INFO - Disk name: /dev/loop5, Mount point: /snap/gh/502, Filesystem type: squashfs
+2023-03-10 15:48:30,606 - INFO - Disk total space: 0.04GB
+2023-03-10 15:48:30,606 - INFO - Disk used space: 0.04GB
+2023-03-10 15:48:30,606 - INFO - Disk free space: 0.00GB
+2023-03-10 15:48:30,606 - INFO - Disk name: /dev/loop6, Mount point: /snap/core22/509, Filesystem type: squashfs
+2023-03-10 15:48:30,606 - INFO - Disk total space: 0.07GB
+2023-03-10 15:48:30,606 - INFO - Disk used space: 0.07GB
+2023-03-10 15:48:30,606 - INFO - Disk free space: 0.00GB
+2023-03-10 15:48:30,606 - INFO - Disk name: /dev/loop8, Mount point: /snap/core18/2697, Filesystem type: squashfs
+2023-03-10 15:48:30,606 - INFO - Disk total space: 0.05GB
+2023-03-10 15:48:30,606 - INFO - Disk used space: 0.05GB
+2023-03-10 15:48:30,606 - INFO - Disk free space: 0.00GB
+2023-03-10 15:48:30,606 - INFO - Disk name: /dev/loop10, Mount point: /snap/gtk-common-themes/1535, Filesystem type: squashfs
+2023-03-10 15:48:30,606 - INFO - Disk total space: 0.09GB
+2023-03-10 15:48:30,606 - INFO - Disk used space: 0.09GB
+2023-03-10 15:48:30,606 - INFO - Disk free space: 0.00GB
+2023-03-10 15:48:30,606 - INFO - Disk name: /dev/loop11, Mount point: /snap/gnome-3-38-2004/119, Filesystem type: squashfs
+2023-03-10 15:48:30,606 - INFO - Disk total space: 0.34GB
+2023-03-10 15:48:30,606 - INFO - Disk used space: 0.34GB
+2023-03-10 15:48:30,606 - INFO - Disk free space: 0.00GB
+2023-03-10 15:48:30,606 - INFO - Disk name: /dev/nvme0n1p1, Mount point: /boot/efi, Filesystem type: vfat
+2023-03-10 15:48:30,606 - INFO - Disk total space: 0.19GB
+2023-03-10 15:48:30,606 - INFO - Disk used space: 0.08GB
+2023-03-10 15:48:30,606 - INFO - Disk free space: 0.11GB
+2023-03-10 15:48:30,606 - INFO - Disk name: /dev/loop12, Mount point: /snap/gtk-common-themes/1534, Filesystem type: squashfs
+2023-03-10 15:48:30,606 - INFO - Disk total space: 0.08GB
+2023-03-10 15:48:30,606 - INFO - Disk used space: 0.08GB
+2023-03-10 15:48:30,606 - INFO - Disk free space: 0.00GB
+2023-03-10 15:48:30,606 - INFO - Disk name: /dev/sda3, Mount point: /storage, Filesystem type: ext4
+2023-03-10 15:48:30,606 - INFO - Disk total space: 479.62GB
+2023-03-10 15:48:30,606 - INFO - Disk used space: 242.30GB
+2023-03-10 15:48:30,606 - INFO - Disk free space: 212.89GB
+2023-03-10 15:48:30,606 - INFO - Disk name: /dev/loop13, Mount point: /snap/snap-store/599, Filesystem type: squashfs
+2023-03-10 15:48:30,606 - INFO - Disk total space: 0.04GB
+2023-03-10 15:48:30,606 - INFO - Disk used space: 0.04GB
+2023-03-10 15:48:30,606 - INFO - Disk free space: 0.00GB
+2023-03-10 15:48:30,606 - INFO - Disk name: /dev/loop14, Mount point: /snap/snapd/17950, Filesystem type: squashfs
+2023-03-10 15:48:30,606 - INFO - Disk total space: 0.05GB
+2023-03-10 15:48:30,606 - INFO - Disk used space: 0.05GB
+2023-03-10 15:48:30,606 - INFO - Disk free space: 0.00GB
+2023-03-10 15:48:30,606 - INFO - Disk name: /dev/loop15, Mount point: /snap/snapd/18357, Filesystem type: squashfs
+2023-03-10 15:48:30,606 - INFO - Disk total space: 0.05GB
+2023-03-10 15:48:30,606 - INFO - Disk used space: 0.05GB
+2023-03-10 15:48:30,606 - INFO - Disk free space: 0.00GB
+2023-03-10 15:48:30,606 - INFO - Disk name: /dev/loop16, Mount point: /snap/core22/522, Filesystem type: squashfs
+2023-03-10 15:48:30,606 - INFO - Disk total space: 0.07GB
+2023-03-10 15:48:30,606 - INFO - Disk used space: 0.07GB
+2023-03-10 15:48:30,607 - INFO - Disk free space: 0.00GB
+2023-03-10 15:48:30,607 - INFO - Disk name: /dev/loop17, Mount point: /snap/ogre-meshviewer/549, Filesystem type: squashfs
+2023-03-10 15:48:30,607 - INFO - Disk total space: 0.05GB
+2023-03-10 15:48:30,607 - INFO - Disk used space: 0.05GB
+2023-03-10 15:48:30,607 - INFO - Disk free space: 0.00GB
+2023-03-10 15:48:30,607 - INFO - Disk name: /dev/loop18, Mount point: /snap/core20/1822, Filesystem type: squashfs
+2023-03-10 15:48:30,607 - INFO - Disk total space: 0.06GB
+2023-03-10 15:48:30,607 - INFO - Disk used space: 0.06GB
+2023-03-10 15:48:30,607 - INFO - Disk free space: 0.00GB
+2023-03-10 15:48:30,607 - INFO - Disk name: /dev/sdb1, Mount point: /media/thomas/0004-74C1, Filesystem type: vfat
+2023-03-10 15:48:30,607 - INFO - Disk total space: 14.73GB
+2023-03-10 15:48:30,607 - INFO - Disk used space: 5.49GB
+2023-03-10 15:48:30,607 - INFO - Disk free space: 9.24GB
+2023-03-10 15:48:30,607 - INFO - Disk name: /dev/loop19, Mount point: /snap/core20/1828, Filesystem type: squashfs
+2023-03-10 15:48:30,607 - INFO - Disk total space: 0.06GB
+2023-03-10 15:48:30,607 - INFO - Disk used space: 0.06GB
+2023-03-10 15:48:30,607 - INFO - Disk free space: 0.00GB
+2023-03-10 15:48:30,607 - INFO - Disk name: /dev/nvme0n1p3, Mount point: /media/thomas/OS, Filesystem type: fuseblk
+2023-03-10 15:48:30,607 - INFO - Disk total space: 166.36GB
+2023-03-10 15:48:30,607 - INFO - Disk used space: 55.13GB
+2023-03-10 15:48:30,607 - INFO - Disk free space: 111.24GB
+2023-03-10 15:48:30,607 - WARNING - GPUtil module not found.

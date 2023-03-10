@@ -1,0 +1,25 @@
+2023-03-10 18:29:15,695 - INFO - Running the COLMAP-OPENMVS pipeline on thomas-XPS-8950
+2023-03-10 18:29:15,695 - INFO - The start time is 2023-03-10 18:29:15.695478
+2023-03-10 18:29:15,695 - INFO - Machine: x86_64
+2023-03-10 18:29:15,700 - INFO - Platform: Linux-5.13.0-30-generic-x86_64-with-glibc2.29
+2023-03-10 18:29:15,700 - INFO - Processor: x86_64
+2023-03-10 18:29:15,700 - INFO - Operating system: posix Linux 5.13.0-30-generic
+2023-03-10 18:29:15,721 - INFO - CPU count: 20
+2023-03-10 18:29:15,721 - INFO - CPU frequency: 2077.8951
+2023-03-10 18:29:15,722 - INFO - Total disk usage: 570.79GB
+2023-03-10 18:29:15,740 - INFO - GPU 0: NVIDIA GeForce RTX 2080 Ti, memory used 520.0 out of 11264.0
+2023-03-10 18:30:48,875 - INFO - 
+
+Finished without errors (I guess) - Time used:: 93 seconds
+2023-03-10 18:30:48,876 - INFO - Command                              Time (s)
+---------------------------------  ----------
+Colmap feature_extractor                    0
+colmap exhaustive_matcher                   1
+colmap mapper                              39
+colmap image_undistorter                    1
+colmap model_converter                      1
+Convert Colmap project to OpenMVS           0
+Densify point cloud                        10
+Reconstruct mesh                           23
+Refine mesh                                12
+Texture mesh                                6
